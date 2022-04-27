@@ -1,0 +1,14 @@
+version: "3"
+services:
+  rclrs-dev:
+    build: .
+    volumes:
+      - type: bind
+        source: "../"
+        target: "/home/vscode/workspace"
+    cap_add: 
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+
+    command: /bin/sh -c "sleep infinity"

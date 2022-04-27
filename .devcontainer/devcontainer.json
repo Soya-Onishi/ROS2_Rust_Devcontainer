@@ -1,0 +1,35 @@
+{
+  "name": "rclrs-dev",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "rclrs-dev",
+  "workspaceFolder": "/home/vscode/workspace",
+
+  "settings": {
+    "lldb.executable": "/usr/bin/lldb",
+    "files.watcherExclude": {
+      "**/target/**": true,
+      "**/build/**": true,
+      "**/log/**": true,
+      "**/install/**": true
+    },
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "rust-analyzer.linkedProjects": [
+      "src/ros2_rust/rclrs/Cargo.toml",
+      "src/ros2_rust/rosidl_runtime_rs/Cargo.toml"
+    ],
+    "[rust]": {
+      "editor.formatOnSave": true
+    }
+  },
+
+  "extensions": [
+    "matklad.rust-analyzer",
+    "vadimcn.vscode-lldb",
+    "bungcip.better-toml",
+    "serayuzgur.crates"
+  ],  
+
+  "remoteUser": "vscode",
+
+  "shutdownAction": "stopCompose"
+}
