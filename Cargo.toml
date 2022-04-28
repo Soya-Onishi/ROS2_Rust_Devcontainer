@@ -1,0 +1,12 @@
+[workspace]
+members = [
+  "./src/ros2_rust/rclrs_examples",
+  "./src/ros2_rust/rclrs",
+  "./src/ros2_rust/rosidl_runtime_rs"  
+]
+
+[patch.crates-io.rclrs]
+path = "/home/vscode/workspace/src/ros2_rust/rclrs"
+
+[patch.crates-io.rosidl_runtime_rs]
+path = "/home/vscode/workspace/src/ros2_rust/rosidl_runtime_rs"

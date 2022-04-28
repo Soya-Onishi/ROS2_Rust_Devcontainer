@@ -13,10 +13,6 @@
       "**/install/**": true
     },
     "rust-analyzer.checkOnSave.command": "clippy",
-    "rust-analyzer.linkedProjects": [
-      "src/ros2_rust/rclrs/Cargo.toml",
-      "src/ros2_rust/rosidl_runtime_rs/Cargo.toml"
-    ],
     "[rust]": {
       "editor.formatOnSave": true
     }
