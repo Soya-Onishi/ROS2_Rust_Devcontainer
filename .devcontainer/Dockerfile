@@ -18,7 +18,7 @@ COPY --from=unpacker /root/ros2-linux /opt/ros/foxy
 
 RUN apt update && \
     apt upgrade -y && \
-    apt install -y git curl gnupg2 lsb-release build-essential clang libclang-dev lldb python3-pip wget openssl libssl-dev
+    apt install -y git curl gnupg2 lsb-release build-essential clang libclang-dev lldb python3-pip wget openssl libssl-dev nano
 RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
 RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu focal main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
