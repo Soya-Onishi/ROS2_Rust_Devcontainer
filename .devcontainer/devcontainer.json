@@ -4,6 +4,11 @@
   "service": "rclrs-dev",
   "workspaceFolder": "/home/vscode/workspace",
 
+  "remoteEnv": {
+    // Put your development repository URL
+    "ROS2_RUST_REPO": "git@github.com:Soya-Onishi/ros2_rust.git"
+  },
+
   "settings": {
     "lldb.executable": "/usr/bin/lldb",
     "files.watcherExclude": {
@@ -26,6 +31,5 @@
   ],  
 
   "remoteUser": "vscode",
-
   "shutdownAction": "stopCompose"
 }
